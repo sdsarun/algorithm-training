@@ -12,7 +12,7 @@ class LinkedList {
     }
 
     // remove first occur found.
-    remove(target) {
+    removeAt(target) {
         if (this.isEmpty()) return false;
 
         if (this.#head.getData() === target) {
@@ -69,7 +69,7 @@ class LinkedList {
         return returnValue;
     }
 
-    contain(target) {
+    contains(target) {
         let found = false;
         let temp = this.#head;
         while (temp !== null) {
@@ -109,7 +109,6 @@ class LinkedList {
             return;
         }
 
-        // if list have at least one node.
         let temp = this.#head;
         while (temp !== null && temp.getData() !== target) {
             temp = temp.getNext();
