@@ -35,6 +35,7 @@ function dfs(adj, startNode) {
 		st.pop();
 
 		if (visited[u]) continue;
+
 		visited[u] = true;
 		output += u + " ";
 

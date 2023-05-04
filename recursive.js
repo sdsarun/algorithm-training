@@ -8,7 +8,6 @@
 //let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //console.log(sumArr(arr, arr.length));
 
-
 //function binarySearch(arr, l, r, v) {
 //	if (l > r) return -1;
 //
@@ -21,22 +20,19 @@
 
 //let arr = [];
 //console.log(binarySearch(arr, 0, arr.length, 1));
-
-function hanoi(n, src, aux, dst) {
-    if (n === 1) {
-        console.log(`${src} ==> ${dst}`);
-        return;
-    }
-
-    hanoi(n - 1, src, dst, aux);
-    hanoi(1, src, aux, dst);
-    hanoi(n - 1, aux, src, dst);
+function towerOfHanoi(n, src, aux, dest) {
+	if (n === 1) {
+		console.log(`move ${src} -> ${dest}`);
+		return;
+	}
+	towerOfHanoi(n - 1, src, dest, aux);
+	towerOfHanoi(1, src, aux, dest);
+	towerOfHanoi(n - 1, aux, src, dest);
 }
+
 
 let n = 3;
 let a = 'A';
 let b = 'B';
 let c = 'C';
-hanoi(n, a, b, c);
-
-
+towerOfHanoi(n, a, b, c);
