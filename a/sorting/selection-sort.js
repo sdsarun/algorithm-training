@@ -1,9 +1,8 @@
 const array = [2, 3, 1, 5, 9];
 // 1, 2, 3, 5, 9
-
-
 console.log(array);
 selectionSort(array);
+
 
 function selectionSort(array) {
 	let sortedIndex = array.length - 1;

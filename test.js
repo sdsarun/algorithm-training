@@ -64,7 +64,3 @@ console.log(pq.dequeue());
 //console.log(pq.dequeue());
 //console.log(pq.dequeue());
 
-
-const ar = [];
-ar.push(10);
-
