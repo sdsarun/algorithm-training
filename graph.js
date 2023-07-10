@@ -49,7 +49,7 @@ function dfs(adj, startNode) {
 }
 
 function bfs(adj) {
-
+	let q = [];
 }
 
 function matrixWay() {
@@ -73,7 +73,6 @@ function matrixWay() {
 	}
 
 	printAdjMatrix(adj);
-
 	dfs(adj, 3);
 }
 
